@@ -20,7 +20,7 @@ git --version
 ```
 If you don’t have it installed already, it will prompt you to install it.<br>
 If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at https://git-scm.com/download/mac.
-<img src="../../images/git-osx-installer.png">
+<img src="images/git-osx-installer.png">
 
 
 ## Installing on Windows
