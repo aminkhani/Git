@@ -33,32 +33,33 @@
 </div>
 
 > **Note**
+>
 > 📣 You can help improve this repo, by giving me a **⭐star⭐** and **❤️following me❤️**
 <br>
 
-<h2>Table of Contents</h2>
+<h1>Table of Contents</h1>
 
 <ul>
     <li>
-        <h4><a href="01_Getting_Started">01_Getting_Srarted</a></h4>
+        <h2><a href="01_Getting_Started">01_Getting_Srarted</a></h2>
         <ul>
             <li>
-                <h5><a href="01_Getting_Started/01_What_is_Git.md">01_What_is_Git</a></h5>
+                <h3><a href="01_Getting_Started/01_What_is_Git.md">01_What_is_Git</a></h3>
             </li>
             <li>
-                <h5><a href="01_Getting_Started/02_Installing_Git.md">02_Installing_Git</a></h5>
+                <h3><a href="01_Getting_Started/02_Installing_Git.md">02_Installing_Git</a></h3>
             </li>
             <li>
-                <h5><a href="01_Getting_Started/03_Git_vs_Github.md">03_Git_vs_Github</a></h5>
+                <h3><a href="01_Getting_Started/03_Git_vs_Github.md">03_Git_vs_Github</a></h3>
             </li>
             <li>
-                <h5><a href="01_Getting_Started/04_VScode_Setup.md">04_VScode_Setup</a></h5>
+                <h3><a href="01_Getting_Started/04_VScode_Setup.md">04_VScode_Setup</a></h3>
             </li>
             <li>
-                <h5><a href="01_Getting_Started/05_First_Time_Git_Setup.md">05_First_Time_Git_Setup</a></h5>
+                <h3><a href="01_Getting_Started/05_First_Time_Git_Setup.md">05_First_Time_Git_Setup</a></h3>
             </li>
             <li>
-                <h5><a href="01_Getting_Started/06_Basics.md">06_Basics</a></h5>
+                <h3><a href="01_Getting_Started/06_Basics.md">06_Basics</a></h3>
             </li>
         </ul>
     </li>

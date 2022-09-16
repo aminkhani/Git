@@ -11,7 +11,7 @@ You can think of a **version control system (VCS)** as a kind of "database". It 
   - Distributed Version Control System (**DVCS**)
     - A DVCS allows clients to create mirrored repositories. These data backups can be easily be placed on the server to replace any lost information.  
 <br>
-![CVS-vs-DVS](./images/CVS-vs-DVS.ppm)
+<img src="images/CVCS-vs-DVCS.png">
 
 ## Git History
 >By far, the most widely used modern version control system in the world today is **Git**. **Git** is a mature, actively maintained open source project originally developed in **2005** by **Linus Torvalds**, the famous creator of the Linux **operating system kernel**.

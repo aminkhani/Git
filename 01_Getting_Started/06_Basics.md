@@ -17,9 +17,9 @@
 
 
 
-<h3 id="Getting_a_Git_Repository">Getting a Git Repository</h3>
+<h2 id="Getting_a_Git_Repository">Getting a Git Repository</h2>
 You typically obtain a Git repository in one of two ways:
-<h4 id="git_init">1. Initializing a Repository in an Existing Directory</h4>
+<h3 id="git_init">1. Initializing a Repository in an Existing Directory</h3>
 If you have a project directory that is currently not under version control and you want to start controlling it with Git, you first need to go to that project’s directory and initializing git there:
 ```bash 
 cd /MyProject
@@ -28,7 +28,7 @@ git init
 
 This creates a new subdirectory named **`.git`** that contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is **tracked** yet. See **[Git Internals](https://git-scm.com/book/en/v2/ch00/ch10-git-internals)** for more information about exactly what files are contained in the **`.git`** directory you just created.
 
-<h4 id="git_clone">2. Cloning an Existing Repository</h4>
+<h3 id="git_clone">2. Cloning an Existing Repository</h3>
 If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is:
 ```bash 
 git clone <Repo URL>
@@ -42,7 +42,7 @@ git clone <Repo URL> <Your Directory Name>
 Git has a number of different transfer protocols you can use. The common way, uses the **`https://`** protocol, but you may also see **`git://`** or **`user@server:path/to/repo.git`**, which uses the **SSH transfer protocol**. **[Getting Git on a Server](https://git-scm.com/book/en/v2/ch00/_getting_git_on_a_server)** will introduce all of the available options the server can set up to access your Git repository and the pros and cons of each.
 
 
-<h3 id="git_url">Git URLs</h3>
+<h2 id="git_url">Git URLs</h2>
 
 Git has its own URL syntax which is used to pass remote repository locations to Git commands.
 **Git URL protocols:**
@@ -51,7 +51,7 @@ Git has its own URL syntax which is used to pass remote repository locations to 
 2. **HTTP: Hyper text transfer protocol.** The protocol of the web, most commonly used for transferring web page HTML data over the Internet. Git can be configured to communicate over HTTP.
 
 
-<h3 id="Recording_Changes">Recording Changes to the Repository</h3>
+<h2 id="Recording_Changes">Recording Changes to the Repository</h2>
 
 All files in your working directory can be in one of two states: **tracked** or **untracked**. **Tracked files** are files that were in the last snapshot. they can be **unmodified**, **modified**, or **staged**. 
 ##### In short, tracked files are files that Git knows about.
@@ -61,7 +61,7 @@ All files in your working directory can be in one of two states: **tracked** or 
 As you edit files, Git sees them as **modified**, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.<br>
 <img src="images/lifecycle.png">
 
-<h3 id="git_status">Checking the Status of Your Files</h3>
+<h2 id="git_status">Checking the Status of Your Files</h2>
 
 The main tool you use to determine which files are in which state is the **`git status`** command. If you run this command **directly after a clone**, you should see something like this:
 ```bash 
@@ -86,7 +86,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 You can see that your new **`README.md`** file is **untracked**, because it’s under the **Untracked files heading** in your status output. Untracked basically means that Git sees a file you didn’t have in the previous **snapshot (commit)**, and which hasn’t yet been staged.
 
-<h4 id="git_status_s">Short Status</h4>
+<h3 id="git_status_s">Short Status</h3>
 
 Git also has a **short status flag** so you can see your changes in a more compact way. If you run **`git status -s`** or **`git status --short`** you get a far more simplified output from the command:
 ```bash 
@@ -99,7 +99,7 @@ M  lib/simplegit.rb
 ```
 New files that *aren’t tracked* have a **`??`** next to them, new files that have been **added to the staging area** have an **`A`**, **modified files** have an **`M`** and so on. There are two columns to the output — the **left-hand column** indicates the **status of the staging area** and the **right-hand column** indicates the **status of the working tree**. So for example in that output, the **`README`** file is **modified** in the working directory but **not yet staged**, while the **``lib/simplegit.rb``** file is **modified and staged**. The **`Rakefile`** was **modified**, **staged** and then **modified again**, so there are changes to it that are both staged and unstaged.
 
-<h3 id="git_log">Information of the commit</h3>
+<h2 id="git_log">Information of the commit</h2>
 
 The **`git log`** command displays committed snapshots. It lets you list the project history, filter it, and search for specific changes. While **`git status`** lets you inspect the working directory and the staging area, **`git log`** only operates on the committed history.<br>
 <img src="images/git-log.png">
@@ -117,7 +117,7 @@ Log output can be customized in several ways, some of the most common configurat
 - **`git log --graph --decorate`:** The **`--graph`** flag that will draw a text based graph of the commits on the left hand side of the commit messages. **`--decorate`** adds the names of branches or tags of the commits that are shown.
 
 
-<h3 id="git_add">Tracking New Files</h3>
+<h2 id="git_add">Tracking New Files</h2>
 
 In order to begin **tracking a new file**, you use the command **`git add <File NAME>`** .For example, to begin **tracking** the **`README.md`** file: **`git add README.md`**.
 
@@ -145,7 +145,7 @@ add all files: **```git add . ```**
 add all files with \<py> postfix: **```git add "*.<py>"```**
 
 
-<h3 id="git_commit">Committing Your Changes</h3>
+<h2 id="git_commit">Committing Your Changes</h2>
 
 Now that your **staging area** is set up the way you want it, you can **commit** your changes. **Remember** that anything that is still **unstaged** — any files you have **created or modified** that you haven’t run **`git add`** on since you edited them — won’t go into this commit. They will stay as **modified** files on your disk. you’re ready to commit your changes. The simplest way to commit is to type **`git commit`**.
 The default editor of the git config, will displays the following text (this example is a Vim screen):
@@ -181,7 +181,7 @@ Remember that the commit records the snapshot you set up in your staging area. A
 - **`git commit -am "commit message"`:** A power user shortcut command that combines the **`-a`** and **`-m`** options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 - **`git commit --amend`:** This option adds another level of functionality to the commit command. Passing this option will modify the last commit. Instead of creating a new commit, staged changes will be added to the previous commit. This command will open up the system's configured text editor and prompt to change the previously specified commit message.
 
-<h3 id="gitignore">Ignoring Files</h3>
+<h2 id="gitignore">Ignoring Files</h2>
 
 Often, you’ll have a class of files that you don’t want Git to automatically add or even show you as being untracked. These are generally automatically generated files such as log files or files produced by your build system. In such cases, you can create a file listing patterns to match them named **`.gitignore`**. Here is an example **`.gitignore`** file:
 ```bash
@@ -220,7 +220,7 @@ doc/**/*.pdf
 
 For a list of patterns that can be used in `.gitignore` files, see [this link](https://git-scm.com/docs/gitignore#_pattern_format), [Atlassian gitignore guide](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) or [Github](https://github.com/github/gitignore).
 
-<h3 id="VSCode_difftool">VScode as difftool</h3>
+<h2 id="VSCode_difftool">VScode as difftool</h2>
 
 To make VS Code your default “everything”, first you need to ensure you can run VS Code from the command-line.
 
