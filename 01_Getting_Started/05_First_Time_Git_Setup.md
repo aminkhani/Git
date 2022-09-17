@@ -1,4 +1,4 @@
-# First Time Git Setup
+<h1 id="top">First Time Git Setup</h1>
 Git comes with a tool called **git config** that lets you get and set configuration variables that control all aspects of how Git looks and operates. These variables can be stored in three different places:
 
 - `/etc/gitconfig` file: Contains values for every user on the system and all their repositories. If you pass the option `--system` to `git config`, it reads and writes from this file specifically.
@@ -86,6 +86,7 @@ usage: git add [<options>] [--] <pathspec>...
   --pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character
 ```
 <br>
-<div align="right"><a href="04_First_Time_Git_Setup.md" targert="_blacnk"><img src="https://img.shields.io/badge/Previus-orange?style=for-the-badge&logoColor=white"/></a>
+<div align="right"><a href="04_VScode_Setup.md" targert="_blacnk"><img src="https://img.shields.io/badge/Previus-orange?style=for-the-badge&logoColor=white"/></a>
 <a href="06_Basics.md" targert="_blacnk"><img src="https://img.shields.io/badge/Next-orange?style=for-the-badge&logoColor=white"/></a>
+<a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a>
 </div>

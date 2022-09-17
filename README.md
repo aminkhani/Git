@@ -44,21 +44,50 @@
         <ul>
             <li>
                 <h3><a href="01_Getting_Started/01_What_is_Git.md">01_What_is_Git</a></h3>
+                <ul>
+                  <li>Version Control System</li>
+                  <li>Centralized Version Control System</li>
+                  <li>Distributed Version Control System</li>
+                  <li>Git history</li>
+                  <li>Git basics</li>
+                </ul>
             </li>
             <li>
                 <h3><a href="01_Getting_Started/02_Installing_Git.md">02_Installing_Git</a></h3>
+                <ul>
+                  <li>Installing on Linux</li>
+                  <li>Installing on macOS</li>
+                  <li>Installing on Windows</li>
+                </ul>
             </li>
             <li>
                 <h3><a href="01_Getting_Started/03_Git_vs_Github.md">03_Git_vs_Github</a></h3>
+                <ul>
+                  <li>Different between Git & Github</li>
+                </ul>
             </li>
             <li>
                 <h3><a href="01_Getting_Started/04_VScode_Setup.md">04_VScode_Setup</a></h3>
+                <ul>
+                  <li>Installation</li>
+                  <li>WSL</li>
+                  <li>Extensions</li>
+                </ul>
             </li>
             <li>
                 <h3><a href="01_Getting_Started/05_First_Time_Git_Setup.md">05_First_Time_Git_Setup</a></h3>
+                <ul>
+                  <li>git config</li>
+                  <li>Getting help</li>
+                </ul>
             </li>
             <li>
                 <h3><a href="01_Getting_Started/06_Basics.md">06_Basics</a></h3>
+                <ul>
+                  <li>Configure and Initialize a Repository</li>
+                  <li>Git URLs</li>
+                  <li>Recording Changes to the Repository</li>
+                </ul>
             </li>
         </ul>
     </li>
