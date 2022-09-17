@@ -1,4 +1,5 @@
 <h1 id="top">About Version Control System</h1>
+
 You can think of a **version control system (VCS)** as a kind of "database". It lets you save a **snapshot** of your complete project at any time you want. When you later take a look at an older **snapshot** (let's start calling it **"version"**), your VCS shows you exactly how it differed from the previous one.
 
 ## CVCS vs DVCS
