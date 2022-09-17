@@ -1,6 +1,8 @@
 <h1 id="top">Git Installation</h1>
 Before you start using Git, you have to make it available on your computer. Even if it’s already installed, it’s probably a good idea to update to the latest version. You can either install it as a package or via another installer, or download the source code and compile it yourself.
 
+![git1](https://user-images.githubusercontent.com/51851950/190844930-0e943e3a-e057-4480-9d6b-443b6e9eeab8.gif)
+
 ## Installing on Linux
 If you want to install the basic Git tools on Linux via a binary installer, you can generally do so through the package management tool that comes with your distribution. If you’re on **Fedora (or any closely-related RPM-based distribution, such as RHEL or CentOS)**, you can use ```dnf```:
 ```bash 
