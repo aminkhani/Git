@@ -49,6 +49,7 @@ If you want to use a text editor other than Vim/Nano or any other default editor
 ```bash
 git config --global core.editor "code --wait"
 ```
+![git-code](https://user-images.githubusercontent.com/51851950/190846888-9ab70b18-f88b-4c7d-b5a1-e923b9b89af4.gif)
 
 **Note:** The `--wait` or `-w` flag is crucial, without this, git won't know the editing has completed and in turn won't finish executing the git command.
 
