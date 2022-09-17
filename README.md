@@ -34,11 +34,10 @@
 
 > **Note**
 >
-> 📣 You can help improve this repo, by giving me a **⭐star⭐** and **❤️following me❤️**
+> 📣 You can help to improve this repo, by giving me a **⭐star⭐** and **❤️following me❤️**
 <br>
 
 <h1>Table of Contents</h1>
-
 <ul>
     <li>
         <h2><a href="01_Getting_Started">01_Getting_Srarted</a></h2>
