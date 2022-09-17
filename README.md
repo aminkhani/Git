@@ -17,6 +17,7 @@
 <br />
 <div align="center">
   <h1 align="center">Git Tutorial</h1>
+  <p>Git is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development</p>
   <p align="center"> 
     <br />
    <a href="https://github.com/aminkhani/DGit/issues/new?assignees=&labels=bug&template=bug_report.yml&title=%5BBUG%5D%3A+">🐛Report Bug</a>
