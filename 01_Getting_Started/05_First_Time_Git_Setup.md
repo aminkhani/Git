@@ -21,6 +21,8 @@ It’s important to set your user name and email address because every Git commi
 git config --global user.name "Your Name"
 git config --global user.email email@email.com
 ```
+![gif2](https://user-images.githubusercontent.com/51851950/190845714-f75405e2-c24f-45f0-bf07-cf77de5003d9.gif)
+
 You can also edit the config file manually using a text editor, such as vim, nano, or VSCode, by running:
 ```bash 
 git config --system --edit
