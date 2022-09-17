@@ -1,4 +1,5 @@
 <h1 id="top">First Time Git Setup</h1>
+
 Git comes with a tool called **git config** that lets you get and set configuration variables that control all aspects of how Git looks and operates. These variables can be stored in three different places:
 
 - `/etc/gitconfig` file: Contains values for every user on the system and all their repositories. If you pass the option `--system` to `git config`, it reads and writes from this file specifically.
@@ -37,11 +38,13 @@ $ git config --list
 user.name=Amin Khani
 user.email=aminkhani2010@gmail.com
 ```
+![git-list](https://user-images.githubusercontent.com/51851950/190849876-d7ee6f59-88ff-4227-ac06-728654a2d5de.gif)
 
 **Note:**
 - Your output may include more settings than the ones shown here. The settings shown here are the only settings you need to set up to get started with Git.
 - To see the config level of a specific setting, run `git config --list --show-origin`.
 
+![git-show](https://user-images.githubusercontent.com/51851950/190850151-5977b552-7359-4989-b754-d9378821aa3e.gif)
 
 ## Setting Your Default Text Editor
 If you want to use a text editor other than Vim/Nano or any other default editor you have on your system, you can set your default text editor with the `core.editor` variable. For example, to set the default text editor to VSCode, you can use:
@@ -65,29 +68,12 @@ For example, you can get the manpage help for the git config command by running 
 ```bash 
 git help config
 ```
-In addition, if you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise ```help``` output with the ```-h``` option, as in:
-```bash
-$ git add -h
-usage: git add [<options>] [--] <pathspec>...
+![hh](https://user-images.githubusercontent.com/51851950/190850951-8a2e2b18-f57c-4bc9-a3e9-74ea132a59f8.gif)
 
-  -n, --dry-run               dry run
-  -v, --verbose               be verbose
-  -i, --interactive           interactive picking
-  -p, --patch                 select hunks interactively
-  -e, --edit                  edit current diff and apply
-  -f, --force                 allow adding otherwise ignored files
-  -u, --update                update tracked files
-  --renormalize               renormalize EOL of tracked files (implies -u)
-  -N, --intent-to-add         record only the fact that the path will be added later
-  -A, --all                   add changes from all tracked and untracked files
-  --ignore-removal            ignore paths removed in the working tree (same as --no-all)
-  --refresh                   don't add, only refresh the index
-  --ignore-errors             just skip files which cannot be added because of errors
-  --ignore-missing            check if - even missing - files are ignored in dry run
-  --chmod (+|-)x              override the executable bit of the listed files
-  --pathspec-from-file <file> read pathspec from file
-  --pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character
-```
+In addition, if you don’t need the full-blown manpage help, but just need a quick refresher on the available options for a Git command, you can ask for the more concise ```help``` output with the ```-h``` option, as in:
+
+![gitt](https://user-images.githubusercontent.com/51851950/190850619-2e8f8912-19c3-45c0-a1d0-df1a25811f94.gif)
+
 <br>
 <div align="right"><a href="04_VScode_Setup.md" targert="_blacnk"><img src="https://img.shields.io/badge/Previus-orange?style=for-the-badge&logoColor=white"/></a>
 <a href="06_Basics.md" targert="_blacnk"><img src="https://img.shields.io/badge/Next-orange?style=for-the-badge&logoColor=white"/></a>
