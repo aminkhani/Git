@@ -38,3 +38,7 @@ We highly recommend you to install the following extensions as well for a better
 - [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Dark + Material](https://marketplace.visualstudio.com/items?itemName=vangware.dark-plus-material)
+<br>
+<div align="right"><a href="03_Git_vs_Github.md" targert="_blacnk"><img src="https://img.shields.io/badge/Previus-orange?style=for-the-badge&logoColor=white"/></a>
+<a href="05_First_Time_Git_Setup.md" targert="_blacnk"><img src="https://img.shields.io/badge/Next-orange?style=for-the-badge&logoColor=white"/></a>
+</div>

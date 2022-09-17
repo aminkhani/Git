@@ -85,3 +85,7 @@ usage: git add [<options>] [--] <pathspec>...
   --pathspec-from-file <file> read pathspec from file
   --pathspec-file-nul         with --pathspec-from-file, pathspec elements are separated with NUL character
 ```
+<br>
+<div align="right"><a href="04_First_Time_Git_Setup.md" targert="_blacnk"><img src="https://img.shields.io/badge/Previus-orange?style=for-the-badge&logoColor=white"/></a>
+<a href="06_Basics.md" targert="_blacnk"><img src="https://img.shields.io/badge/Next-orange?style=for-the-badge&logoColor=white"/></a>
+</div>

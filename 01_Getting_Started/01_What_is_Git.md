@@ -51,3 +51,6 @@ The basic Git workflow goes something like this:
   
 
 **Reference:** https://git-scm.com/book/en/v2/
+
+<div align="right"><a href="02_Installing_Git.md" targert="_blacnk"><img src="https://img.shields.io/badge/Next-orange?style=for-the-badge&logoColor=white"/></a>
+</div>

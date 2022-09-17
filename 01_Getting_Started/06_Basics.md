@@ -1,4 +1,5 @@
-## Git Basics - Content
+<h2 id="top">Git Basics - Content</h2>
+
 - <a href="#Getting_a_Git_Repository">Configure and Initialize a Repository</a>
   - <a href="#git_init">`git init`</a>
   - <a href="#git_clone">`git clone`</a>
@@ -40,6 +41,8 @@ git clone <Repo URL> <Your Directory Name>
 ```
 
 Git has a number of different transfer protocols you can use. The common way, uses the **`https://`** protocol, but you may also see **`git://`** or **`user@server:path/to/repo.git`**, which uses the **SSH transfer protocol**. **[Getting Git on a Server](https://git-scm.com/book/en/v2/ch00/_getting_git_on_a_server)** will introduce all of the available options the server can set up to access your Git repository and the pros and cons of each.
+<br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 
 <h2 id="git_url">Git URLs</h2>
@@ -49,6 +52,8 @@ Git has its own URL syntax which is used to pass remote repository locations to 
 1. **SSH: Secure Shell (SSH)** is a ubiquitous authenticated network protocol that is commonly configured by default on most servers. Because **SSH** is an authenticated protocol, you'll need to establish credentials with the hosting server before connecting.
 
 2. **HTTP: Hyper text transfer protocol.** The protocol of the web, most commonly used for transferring web page HTML data over the Internet. Git can be configured to communicate over HTTP.
+<br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 
 <h2 id="Recording_Changes">Recording Changes to the Repository</h2>
@@ -60,6 +65,9 @@ All files in your working directory can be in one of two states: **tracked** or 
 
 As you edit files, Git sees them as **modified**, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.<br>
 <img src="images/lifecycle.png">
+<br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
 
 <h2 id="git_status">Checking the Status of Your Files</h2>
 
@@ -98,6 +106,9 @@ M  lib/simplegit.rb
 ?? LICENSE.txt
 ```
 New files that *aren’t tracked* have a **`??`** next to them, new files that have been **added to the staging area** have an **`A`**, **modified files** have an **`M`** and so on. There are two columns to the output — the **left-hand column** indicates the **status of the staging area** and the **right-hand column** indicates the **status of the working tree**. So for example in that output, the **`README`** file is **modified** in the working directory but **not yet staged**, while the **``lib/simplegit.rb``** file is **modified and staged**. The **`Rakefile`** was **modified**, **staged** and then **modified again**, so there are changes to it that are both staged and unstaged.
+<br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
 
 <h2 id="git_log">Information of the commit</h2>
 
@@ -115,6 +126,8 @@ Log output can be customized in several ways, some of the most common configurat
 - **`git log --author="<pattern>"`:** Search for commits by a particular author. The argument can be a plain string or a regular expression.
 - **`git log --grep="<pattern>"`:** Search for commits with a commit message that matches, which can be a plain string or a regular expression.
 - **`git log --graph --decorate`:** The **`--graph`** flag that will draw a text based graph of the commits on the left hand side of the commit messages. **`--decorate`** adds the names of branches or tags of the commits that are shown.
+<br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 
 <h2 id="git_add">Tracking New Files</h2>
@@ -143,6 +156,8 @@ Changes to be committed:
 **Some Trick in `git add`**
 add all files: **```git add . ```**
 add all files with \<py> postfix: **```git add "*.<py>"```**
+<br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 
 <h2 id="git_commit">Committing Your Changes</h2>
@@ -180,6 +195,8 @@ Remember that the commit records the snapshot you set up in your staging area. A
 - **`git commit -m "commit message"`:** A shortcut command that immediately creates a commit with a passed commit message. By default, git commit will open up the locally configured text editor, and prompt for a commit message to be entered. Passing the **`-m`** option will forgo the text editor prompt in-favor of an inline message.
 - **`git commit -am "commit message"`:** A power user shortcut command that combines the **`-a`** and **`-m`** options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 - **`git commit --amend`:** This option adds another level of functionality to the commit command. Passing this option will modify the last commit. Instead of creating a new commit, staged changes will be added to the previous commit. This command will open up the system's configured text editor and prompt to change the previously specified commit message.
+<br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 <h2 id="gitignore">Ignoring Files</h2>
 
@@ -219,6 +236,9 @@ doc/**/*.pdf
 ```
 
 For a list of patterns that can be used in `.gitignore` files, see [this link](https://git-scm.com/docs/gitignore#_pattern_format), [Atlassian gitignore guide](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) or [Github](https://github.com/github/gitignore).
+<br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
 
 <h2 id="git_diff">Viewing Your Staged and Unstaged Changes</h2>
 
@@ -290,3 +310,8 @@ Run the command **`git config --global --edit`** to edit the global config, and 
   cmd = code --wait --diff $LOCAL $REMOTE
 ```
 If you already have **`[core]`** section, just add the **`[diff]`** and **`[difftool]`** sections to it.
+<br>
+<div align="right"><a href="05_First_Time_Git_Setup.md" targert="_blacnk"><img src="https://img.shields.io/badge/Previus-orange?style=for-the-badge&logoColor=white"/></a>
+<a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a>
+</div>
+

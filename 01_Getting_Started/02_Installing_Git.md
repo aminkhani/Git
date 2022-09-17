@@ -27,4 +27,8 @@ If you want a more up to date version, you can also install it via a binary inst
 There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to https://git-scm.com/download/win and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to https://gitforwindows.org.
 
 
-##### for more information, go to https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+**For more information, go to:** https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+<br>
+<div align="right"><a href="01_What_is_Git.md" targert="_blacnk"><img src="https://img.shields.io/badge/Previus-orange?style=for-the-badge&logoColor=white"/></a>
+<a href="03_Git_vs_Github.md" targert="_blacnk"><img src="https://img.shields.io/badge/Next-orange?style=for-the-badge&logoColor=white"/></a>
+</div>
